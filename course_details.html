@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>
+    <style>
+        /* Basic CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1f2a38; /* Dark blue background */
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #310257; /* White text color */
+        }
+
+        p {
+            color: #ccc; /* Light grey text color */
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #007bff; /* Blue header background */
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 30px;
+        }
+
+        /* Course Details Section */
+        .course-details {
+            background-color: rgba(255, 255, 255, 0.1); /* Transparent white background */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced box shadow for depth */
+            margin-bottom: 30px;
+        }
+
+        .course-details img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Box shadow for images */
+        }
+
+        .course-details h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #fff; /* White text color */
+        }
+
+        .course-details p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .course-meta {
+            margin-top: 20px;
+        }
+
+        .course-meta .meta-item {
+            margin-right: 20px;
+            display: inline-block;
+            font-size: 16px;
+            color: #ccc; /* Light grey text color */
+        }
+
+        /* Ratings Styles */
+        .ratings {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #ffc107;
+        }
+
+        /* Buy Button Styles */
+        .buy-btn {
+            background-color: #28a745; /* Green buy button */
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
+        }
+
+        .buy-btn:hover {
+            background-color: #218838; /* Darker green on hover */
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #1f2a38; /* Dark blue footer background */
+            color: #ccc; /* Light grey text color */
+            padding: 30px 0;
+            text-align: center;
+            margin-top: 50px;
+            border-top: 1px solid #007bff; /* Blue border on top */
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        /* Testimonial Styles */
+        .testimonial {
+            margin-bottom: 30px;
+        }
+
+        .testimonial img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Box shadow for images */
+        }
+
+        .testimonial p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Python from Zero to Hero!</h1>
+    </header>
+
+    <div class="container">
+        <div class="course-details">
+            <img src="assets/images/Python from zero to hero.png" alt="Course Image">
+            <h2>Course Overview</h2>
+            <p>This comprehensive course will take you from beginner to advanced level in Python programming. Whether you're completely new to programming or have some experience, this course will equip you with the skills you need to succeed. You'll learn the fundamentals of Python syntax, data structures, object-oriented programming, and more. By the end of the course, you'll have the knowledge and confidence to tackle real-world Python projects.</p>
+            
+            <div class="course-meta">
+                <div class="meta-item">
+                    <span class="fa fa-clock-o"></span>
+                    <span class="meta-value"> 28 hrs </span>
+                </div>
+                <div class="meta-item">
+                    <span class="fa fa-users"></span>
+                    <span class="meta-value"> 50,000+ students enrolled </span>
+                </div>
+            </div>
+            <button class="buy-btn" style="float: right;" onclick="redirectToPayment()">Enroll Now</button>
+
+            <div style="clear: both;"></div> <!-- Clear float -->
+        </div>
+
+        <div class="course-details">
+            <h2>Course Outcome</h2>
+            <ul>
+                <li>Master Python programming language from scratch.</li>
+                <li>Understand Python syntax, data structures, and control flow.</li>
+                <li>Learn object-oriented programming principles in Python.</li>
+                <li>Develop real-world applications using Python.</li>
+                <li>Prepare for advanced Python topics and certifications.</li>
+                <li>Learn new concepts from industry experts</li>
+            </ul>
+        </div>
+
+        <div class="course-details">
+            <h2>Modules</h2>
+            <ol>
+                <li>Introduction to Python</li>
+                <li>Basic Python Syntax</li>
+                <li>Data Types and Variables</li>
+                <li>Control Structures</li>
+                <li>Functions and Modules</li>
+                <li>Object-Oriented Programming</li>
+                <li>File Handling and Exception Handling</li>
+                <li>Loops</li>
+                <li>String,Lists,Dictionaries</li>
+                <li>Final project</li>
+
+            </ol>
+        </div>
+
+        <div class="course-details">
+            <h2>Recommendations</h2>
+            <p>This course is recommended for:</p>
+            <ul>
+                <li>Beginners who want to learn Python programming from scratch.</li>
+                <li>Students who want to enhance their programming skills with Python.</li>
+                <li>Professionals who need to use Python in their work or projects.</li>
+                <li>Anyone interested in mastering Python for career advancement.</li>
+            </ul>
+        </div>
+
+        <div class="course-details">
+            <h2>Testimonials</h2>
+            <div class="testimonial">
+                <img src="assets\images\s1.png" alt="John Doe Photo">
+                <p>"This Python course is amazing! The instructor explains concepts clearly and provides practical examples. Highly recommended!"</p>
+                <p>- John Doe</p>
+            </div>
+            <div class="testimonial">
+                <img src="assets\images\s3.png" alt="John Doe Photo">
+                <p>"Study course is the best choice for advancing my career. The courses are well-structured, and the instructors are highly knowledgeable. I've seen a significant improvement in my skills since I started learning here."</p>
+                <p>- Jane Smith</p>
+            </div>
+        </div>
+
+    <footer>
+        <p>&copy; Copyrighy @ Rudra Narayan Hota</p>
+    </footer>
+</body>
+</html>
